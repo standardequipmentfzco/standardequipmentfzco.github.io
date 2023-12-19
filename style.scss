@@ -1,0 +1,88 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+
+body {
+  background: url(images/body-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+header {
+  background-image: url('{{ site.baseurl }}/images/header-bg.png');
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+footer {
+  background-color: $lightGray;
+  padding: 10px;
+}
+
+#main {
+  min-height: 400px;
+}
+
+.logo {
+  padding: 20px;
+  margin: 0;
+  float: right;
+}
+
+img {
+  max-width: 400px;
+  max-height: 200px;
+  float: left;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+h2 {
+  padding-top: 40px;
+  color: rgb(195, 54, 54) !important;
+}
+
+h1 {
+  color: rgb(195, 54, 54) !important;
+}
+
+.card-img-top {
+  margin: 0px;
+  max-width: 100%;
+}
+
+.carousel-inner img {
+  max-width: none;
+  max-height: none;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 200px;
+
+}
+
+#main {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";

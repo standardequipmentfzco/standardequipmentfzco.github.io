@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="row mt-4">
+  <div class="col col-12 col-xl-8">
+    <h1>Standard Equipment FZCO</h1>
+    <p>Our company specializes in the sale and rental of a diverse range of high-quality industrial equipment for businesses of all sizes. We offer an extensive selection of products that cover various industries, including manufacturing, construction, mining, and more. Our team of experts provides customized solutions to meet the unique needs of each customer, ensuring efficient and reliable operation of their equipment. In addition to our wide product range, we also offer a comprehensive range of services, such as installation, maintenance, repair, and training. By partnering with us, businesses can focus on their core operations, knowing that their industrial equipment is in capable hands.</p>
+
+    <p>Purchasing equipment from our organization is advantageous for several reasons. Firstly, we have an extensive network of reliable suppliers who provide us with high-quality equipment at competitive prices. This ensures that our customers receive the best value for their money without compromising on quality.</p>
+
+    <p>Secondly, our team of experienced professionals have a thorough understanding of the equipment we sell and can provide valuable advice to our customers on which products best suit their specific needs and requirements. We also offer customized solutions based on the unique requirements of each customer, ensuring that they get the most out of their investment.</p>
+    <p>In addition, we offer flexible payment terms to our customers, allowing them to spread the cost of their purchases over a convenient period of time. This makes it easier for businesses of all sizes to invest in the equipment they need without incurring undue financial burden.</p>
+    <p>Furthermore, our organization places a strong emphasis on customer satisfaction, and we are committed to providing excellent after-sales support. This includes comprehensive training programs, technical support, and regular maintenance services to ensure that the equipment remains in top condition for the long term.</p>
+    <p>Finally, we take pride in our ability to deliver equipment quickly and efficiently, without compromising on quality or customer satisfaction.</p>
+    <p>Our streamlined supply chain allows us to respond to customer inquiries and place orders with minimal lead times, ensuring that your equipment arrives when you need it most.</p>
+    <p>All these factors contribute to the overall advantage of purchasing equipment from our organization. With our expertise, competitive prices, flexible payment options, and unparalleled customer service, it’s no wonder why our customers continue to choose us time and time again.</p>
+  </div>
+  <div class="col col-12 col-xl-4">
+    <p><img src="{{ site.baseurl }}/images/path239.png" style="max-width:100%; max-height:100%; float: none;" alt=""></p>  
+  </div>
+</div>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
